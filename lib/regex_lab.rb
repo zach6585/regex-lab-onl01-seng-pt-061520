@@ -25,7 +25,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if phone(/\S\d/) 
+  if phone.scan(/\d/).size == 10 
     return true 
   else 
     return false 
